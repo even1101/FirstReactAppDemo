@@ -9,7 +9,6 @@ function App() {
   const [serachField, setSerachField] = useState('');
 
   useEffect(() => {
-    // 使用瀏覽器 API 更新文件標題
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(res=> res.json())
     .then(users => {
@@ -33,7 +32,6 @@ function App() {
         />
       <CardList monsters={filterMonsters} />
   </div>
-
   );
 }
 
